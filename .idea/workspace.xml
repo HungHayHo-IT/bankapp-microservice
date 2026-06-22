@@ -4,11 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab6b5c7-5f82-4d9b-b109-458d0839e7b8" name="Changes" comment="" />
+    <list default="true" id="1ab6b5c7-5f82-4d9b-b109-458d0839e7b8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/accounts/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/AccountsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/AccountsApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/audit/AuditAwareImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/constants/AccountsConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/controller/AccountsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/dto/AccountsDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/dto/CustomerDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/dto/ErrorResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/dto/ResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/entity/Accounts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/entity/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/entity/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/exception/CustomerAlreadyExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/mapper/AccountsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/mapper/CustomerMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/repository/AccountsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/repository/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/service/IAccountsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/service/impl/AccountsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/test-classes/com/bankapp/accounts/AccountsApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="CopilotChats">
     <option name="panelChat">
@@ -33,6 +68,9 @@
       <entry key="_D:/PROJECT/Banking_Microservice" value="3FTUhOWSNtM3EkgcnNlKvmcm0ve" />
     </persistenceIdMap>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -46,15 +84,19 @@
     "Application.CardsApplication.executor": "Run",
     "Application.LoansApplication.executor": "Run",
     "JUnit.AccountsApplicationTests.executor": "Run",
+    "Maven.accounts [package].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/PROJECT/Banking_Microservice",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+    "last_opened_file_path": "D:/PROJECT/Banking_Microservice/loans",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PROJECT\Banking_Microservice\loans" />
+      <recent name="D:\PROJECT\Banking_Microservice\cards" />
       <recent name="D:\PROJECT\Banking_Microservice" />
       <recent name="D:\PROJECT\Banking_Microservice\accounts\src\main\java\bankapp" />
     </key>
