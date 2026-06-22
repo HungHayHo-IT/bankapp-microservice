@@ -94,12 +94,6 @@
 | "docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:22.0.3 start-dev" | To create Keycloak Container|
 
 
-## Apache Benchmark command used in the course
-
-|     Apache Benchmark command      |     Description          |
-| ------------- | ------------- |
-| "ab -n 10 -c 2 -v 3 http://localhost:8072/eazybank/cards/api/contact-info" | To perform load testing on API by sending 10 requests |
-
 ## Kubernetes Commands used in the course
 
 |     Kubernetes Command       |     Description          |
