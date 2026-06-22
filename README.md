@@ -52,87 +52,86 @@
 - Istio (Service mesh) - https://istio.io
 
 
-## Maven Commands used in the course
+## Maven Commands
 
 |     Maven Command       |     Description          |
 | ------------- | ------------- |
-| "mvn clean install -Dmaven.test.skip=true" | To generate a jar inside target folder |
-| "mvn spring-boot:run" | To start a springboot maven project |
-| "mvn spring-boot:build-image" | To generate a docker image using Buildpacks. No need of Dockerfile |
-| "mvn compile jib:dockerBuild" | To generate a docker image using Google Jib. No need of Dockerfile |
+| "mvn clean install -Dmaven.test.skip=true" | Tạo file jar trong thư mục target |
+| "mvn spring-boot:run" | Khởi chạy một project Spring Boot bằng Maven |
+| "mvn spring-boot:build-image" | Tạo docker image bằng Buildpacks, không cần Dockerfile |
+| "mvn compile jib:dockerBuild" | Tạo docker image bằng Google Jib, không cần Dockerfile |
 
-## Docker Commands used in the course
+## Docker Commands
 
 |     Docker Command       |     Description          |
 | ------------- | ------------- |
-| "docker build . -t eazybytes/accounts:s4" | To generate a docker image based on a Dockerfile |
-| "docker run  -p 8080:8080 eazybytes/accounts:s4" | To start a docker container based on a given image |
-| "docker images" | To list all the docker images present in the Docker server |
-| "docker image inspect image-id" | To display detailed image information for a given image id |
-| "docker image rm image-id" | To remove one or more images for a given image ids |
-| "docker image push docker.io/eazybytes/accounts:s4" | To push an image or a repository to a registry |
-| "docker image pull docker.io/eazybytes/accounts:s4" | To pull an image or a repository from a registry |
-| "docker ps" | To show all running containers |
-| "docker ps -a" | To show all containers including running and stopped |
-| "docker container start container-id" | To start one or more stopped containers |
-| "docker container pause container-id" | To pause all processes within one or more containers |
-| "docker container unpause container-id" | To unpause all processes within one or more containers |
-| "docker container stop container-id" | To stop one or more running containers |
-| "docker container kill container-id" | To kill one or more running containers instantly |
-| "docker container restart container-id" | To restart one or more containers |
-| "docker container inspect container-id" | To inspect all the details for a given container id |
-| "docker container logs container-id" | To fetch the logs of a given container id |
-| "docker container logs -f container-id" | To follow log output of a given container id |
-| "docker container rm container-id" | To remove one or more containers based on container ids |
-| "docker container prune" | To remove all stopped containers |
-| "docker compose up" | Creates and starts containers based on the given Docker Compose file |
-| "docker compose down" | Stops and removes containers, networks, volumes, and images created by up |
-| "docker compose start" | Starts existing (previously created) containers without recreating them |
-| "docker compose stop" | Stops running containers without removing them |
-| "docker run -p 3306:3306 --name accountsdb -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=accountsdb -d mysql" | To create a MySQL DB container |
-| "docker run -p 6379:6379 --name eazyredis -d redis" | To create a Redis Container |
-| "docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:22.0.3 start-dev" | To create Keycloak Container|
+| "docker build . -t eazybytes/accounts:s4" | Tạo docker image dựa trên một Dockerfile |
+| "docker run  -p 8080:8080 eazybytes/accounts:s4" | Khởi chạy một docker container dựa trên image đã cho |
+| "docker images" | Liệt kê tất cả docker image hiện có trên Docker server |
+| "docker image inspect image-id" | Hiển thị thông tin chi tiết của image theo image id |
+| "docker image rm image-id" | Xoá một hoặc nhiều image theo image id |
+| "docker image push docker.io/eazybytes/accounts:s4" | Đẩy (push) một image hoặc repository lên registry |
+| "docker image pull docker.io/eazybytes/accounts:s4" | Kéo (pull) một image hoặc repository từ registry |
+| "docker ps" | Hiển thị tất cả container đang chạy |
+| "docker ps -a" | Hiển thị tất cả container, bao gồm cả đang chạy và đã dừng |
+| "docker container start container-id" | Khởi động lại một hoặc nhiều container đã dừng |
+| "docker container pause container-id" | Tạm dừng toàn bộ tiến trình trong một hoặc nhiều container |
+| "docker container unpause container-id" | Bỏ tạm dừng một hoặc nhiều container |
+| "docker container stop container-id" | Dừng một hoặc nhiều container đang chạy |
+| "docker container kill container-id" | Buộc dừng ngay lập tức một hoặc nhiều container |
+| "docker container restart container-id" | Khởi động lại một hoặc nhiều container |
+| "docker container inspect container-id" | Xem thông tin chi tiết của container theo container id |
+| "docker container logs container-id" | Lấy log của container theo container id |
+| "docker container logs -f container-id" | Theo dõi log output của container theo container id |
+| "docker container rm container-id" | Xoá một hoặc nhiều container theo container id |
+| "docker container prune" | Xoá toàn bộ container đã dừng |
+| "docker compose up" | Tạo và khởi chạy container dựa trên file Docker Compose đã cho |
+| "docker compose down" | Dừng và xoá container, network, volume, image được tạo bởi up |
+| "docker compose start" | Khởi chạy lại các container đã có sẵn mà không tạo lại |
+| "docker compose stop" | Dừng các container đang chạy mà không xoá chúng |
+| "docker run -p 3306:3306 --name accountsdb -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=accountsdb -d mysql" | Tạo một container MySQL DB |
+| "docker run -p 6379:6379 --name eazyredis -d redis" | Tạo một container Redis |
+| "docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:22.0.3 start-dev" | Tạo một container Keycloak |
 
-
-## Kubernetes Commands used in the course
+## Kubernetes Commands
 
 |     Kubernetes Command       |     Description          |
 | ------------- | ------------- |
-| "kubectl apply -f filename" | To create a deployment/service/configmap based on a given YAML file |
-| "kubectl get all" | To get all the components inside your cluster |
-| "kubectl get pods" | To get all the pods details inside your cluster |
-| "kubectl get pod pod-id" | To get the details of a given pod id |
-| "kubectl describe pod pod-id" | To get more details of a given pod id |
-| "kubectl delete pod pod-id" | To delete a given pod from cluster |
-| "kubectl get services" | To get all the services details inside your cluster |
-| "kubectl get service service-id" | To get the details of a given service id |
-| "kubectl describe service service-id" | To get more details of a given service id |
-| "kubectl get nodes" | To get all the node details inside your cluster |
-| "kubectl get node node-id" | To get the details of a given node |
-| "kubectl get replicasets" | To get all the replica sets details inside your cluster |
-| "kubectl get replicaset replicaset-id" | To get the details of a given replicaset |
-| "kubectl get deployments" | To get all the deployments details inside your cluster |
-| "kubectl get deployment deployment-id" | To get the details of a given deployment |
-| "kubectl get configmaps" | To get all the configmap details inside your cluster |
-| "kubectl get configmap configmap-id" | To get the details of a given configmap |
-| "kubectl get events --sort-by=.metadata.creationTimestamp" | To get all the events occured inside your cluster |
-| "kubectl scale deployment accounts-deployment --replicas=1" | To set the number of replicas for a deployment inside your cluster |
-| "kubectl set image deployment gatewayserver-deployment gatewayserver=eazybytes/gatewayserver:s11 --record" | To set a new image for a deployment inside your cluster |
-| "kubectl rollout history deployment gatewayserver-deployment" | To know the rollout history for a deployment inside your cluster |
-| "kubectl rollout undo deployment gatewayserver-deployment --to-revision=1" | To rollback to a given revision for a deployment inside your cluster |
-| "kubectl get pvc" | To list the pvcs inside your cluster |
-| "kubectl delete pvc data-happy-panda-mariadb-0" | To delete a pvc inside your cluster |
+| "kubectl apply -f filename" | Tạo deployment/service/configmap dựa trên một file YAML đã cho |
+| "kubectl get all" | Lấy tất cả thành phần (component) bên trong cluster |
+| "kubectl get pods" | Lấy thông tin chi tiết của tất cả pod trong cluster |
+| "kubectl get pod pod-id" | Lấy thông tin chi tiết của một pod theo pod id |
+| "kubectl describe pod pod-id" | Lấy thông tin chi tiết hơn của một pod theo pod id |
+| "kubectl delete pod pod-id" | Xoá một pod khỏi cluster theo pod id |
+| "kubectl get services" | Lấy thông tin chi tiết của tất cả service trong cluster |
+| "kubectl get service service-id" | Lấy thông tin chi tiết của một service theo service id |
+| "kubectl describe service service-id" | Lấy thông tin chi tiết hơn của một service theo service id |
+| "kubectl get nodes" | Lấy thông tin chi tiết của tất cả node trong cluster |
+| "kubectl get node node-id" | Lấy thông tin chi tiết của một node |
+| "kubectl get replicasets" | Lấy thông tin chi tiết của tất cả replica set trong cluster |
+| "kubectl get replicaset replicaset-id" | Lấy thông tin chi tiết của một replicaset |
+| "kubectl get deployments" | Lấy thông tin chi tiết của tất cả deployment trong cluster |
+| "kubectl get deployment deployment-id" | Lấy thông tin chi tiết của một deployment |
+| "kubectl get configmaps" | Lấy thông tin chi tiết của tất cả configmap trong cluster |
+| "kubectl get configmap configmap-id" | Lấy thông tin chi tiết của một configmap |
+| "kubectl get events --sort-by=.metadata.creationTimestamp" | Lấy tất cả event đã xảy ra trong cluster |
+| "kubectl scale deployment accounts-deployment --replicas=1" | Đặt số lượng replica cho một deployment trong cluster |
+| "kubectl set image deployment gatewayserver-deployment gatewayserver=eazybytes/gatewayserver:s11 --record" | Đặt image mới cho một deployment trong cluster |
+| "kubectl rollout history deployment gatewayserver-deployment" | Xem lịch sử rollout của một deployment trong cluster |
+| "kubectl rollout undo deployment gatewayserver-deployment --to-revision=1" | Rollback về một revision cụ thể của deployment trong cluster |
+| "kubectl get pvc" | Liệt kê các PVC trong cluster |
+| "kubectl delete pvc data-happy-panda-mariadb-0" | Xoá một PVC trong cluster |
 
-## Helm Commands used in the course
+## Helm Commands
 
 |     Helm Command       |     Description          |
 | ------------- | ------------- |
-| "helm create [NAME]" | Create a default chart with the given name |
-| "helm dependencies build" | To recompile the given helm chart |
-| "helm install [NAME] [CHART]" | Install the given helm chart into K8s cluster |
-| "helm upgrade [NAME] [CHART]" | Upgrades a specified release to a new version of a chart |
-| "helm history [NAME]" | Display historical revisions for a given release |
-| "helm rollback [NAME] [REVISION]" | Roll back a release to a previous revision |
-| "helm uninstall [NAME]" | Uninstall all of the resources associated with a given release |
-| "helm template [NAME] [CHART]" | Render chart templates locally along with the values |
-| "helm list" | Lists all of the helm releases inside a K8s cluster |
+| "helm create [NAME]" | Tạo một chart mặc định với tên đã cho |
+| "helm dependencies build" | Build lại các dependency cho helm chart đã cho |
+| "helm install [NAME] [CHART]" | Cài đặt helm chart đã cho vào cluster K8s |
+| "helm upgrade [NAME] [CHART]" | Nâng cấp một release đã chỉ định lên phiên bản chart mới |
+| "helm history [NAME]" | Hiển thị lịch sử các revision của một release |
+| "helm rollback [NAME] [REVISION]" | Rollback một release về revision trước đó |
+| "helm uninstall [NAME]" | Gỡ bỏ tất cả resource liên quan đến một release đã cho |
+| "helm template [NAME] [CHART]" | Render template của chart cục bộ kèm theo values |
+| "helm list" | Liệt kê tất cả helm release trong cluster K8s |
