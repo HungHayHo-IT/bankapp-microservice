@@ -3,6 +3,11 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
       <profile name="Annotation profile for loans" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -15,11 +20,15 @@
         <module name="accounts" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="configserver" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="accounts" options="-parameters" />
       <module name="cards" options="-parameters" />
+      <module name="configserver" options="-parameters" />
       <module name="loans" options="-parameters" />
     </option>
   </component>
