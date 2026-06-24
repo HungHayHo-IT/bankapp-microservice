@@ -15,7 +15,7 @@ FROM amazoncorretto:21-alpine
 
 WORKDIR /app
 
-COPY target/cards-0.0.1-SNAPSHOT.jar cards-0.0.1-SNAPSHOT.jar
+COPY --from=builder /build/target/cards-0.0.1-SNAPSHOT.jar cards-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8090
 

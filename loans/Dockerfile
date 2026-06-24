@@ -15,7 +15,7 @@ FROM amazoncorretto:21-alpine
 
 WORKDIR /app
 
-COPY target/loans-0.0.1-SNAPSHOT.jar loans-0.0.1-SNAPSHOT.jar
+COPY --from=builder /build/target/loans-0.0.1-SNAPSHOT.jar loans-0.0.1-SNAPSHOT.jar
 
 EXPOSE 9000
 

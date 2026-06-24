@@ -1,6 +1,7 @@
 package com.bankapp.accounts.controller;
 
 import com.bankapp.accounts.constants.AccountsConstants;
+import com.bankapp.accounts.dto.AccountsContactInfoDto;
 import com.bankapp.accounts.dto.CustomerDto;
 import com.bankapp.accounts.dto.ErrorResponseDto;
 import com.bankapp.accounts.dto.ResponseDto;
@@ -14,6 +15,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -35,6 +37,9 @@ import org.springframework.web.bind.annotation.*;
 public class AccountsController {
 
     private IAccountsService iAccountsService;
+
+    @Autowired
+    private AccountsContactInfoDto accountsContactInfoDto;
 
     @Operation(
             summary = "Create Account REST API",
@@ -162,5 +167,16 @@ public class AccountsController {
         }
     }
 
+
+    @Operation(
+            summary = "Get contact info",
+            description = "Contact info details that can be reached out in case of any issues"
+    )
+    @GetMapping("/contact-info")
+    public ResponseEntity<AccountsContactInfoDto> getContactInfo(){
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(accountsContactInfoDto);
+    }
 
 }

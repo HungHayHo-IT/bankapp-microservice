@@ -1,0 +1,5 @@
+accounts:
+  message: "welcome to banking accounts related local API"
+  contactDetail:
+    name: "HungHayHo-IT-qa"
+    email: "nguyenphuocnhahungl9@gmail.com"
