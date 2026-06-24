@@ -1,0 +1,25 @@
+services:
+
+  configserver:
+    build:
+      context: ../../configserver
+      dockerfile: Dockerfile
+    image: hunghayho/configserver:v1
+
+  accounts:
+    build:
+      context: ../../accounts
+      dockerfile: Dockerfile
+    image: hunghayho/accounts:v1
+
+  cards:
+    build:
+      context: ../../cards
+      dockerfile: Dockerfile
+    image: hunghayho/cards:v1
+
+  loans:
+    build:
+      context: ../../loans
+      dockerfile: Dockerfile
+    image: hunghayho/loans:v1
