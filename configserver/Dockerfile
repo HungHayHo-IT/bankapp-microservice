@@ -12,6 +12,8 @@ FROM amazoncorretto:21-alpine
 
 WORKDIR /app
 
+RUN apk add --no-cache curl
+
 COPY --from=builder /build/target/configserver-0.0.1-SNAPSHOT.jar configserver-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8071
