@@ -50,3 +50,10 @@ info:
     name: "accounts"
     description: "bank app accounts applications"
     version: "1.0.0"
+
+
+logging:
+  level:
+    com:
+      bankapp:
+        accounts: DEBUG

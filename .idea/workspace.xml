@@ -5,38 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a18419af-c463-4611-bc1b-ad5441864d0e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/dto/CardsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/dto/CustomerDetailDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/dto/LoansDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/service/ICustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/service/client/CardsFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/service/client/LoansFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/configserver/Dockerfile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/eurekaserver.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/common-config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/java/com/bankapp/eurekaserver/EurekaserverApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eurekaserver/src/test/java/com/bankapp/eurekaserver/EurekaserverApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/AccountsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/gatewayserver.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/banka_pp/gatewayserver/GatewayserverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/banka_pp/gatewayserver/filter/FilterUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/banka_pp/gatewayserver/filter/RequestTraceFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/banka_pp/gatewayserver/filter/ResponseTraceFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/test/java/com/banka_pp/gatewayserver/GatewayserverApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/service/client/CardsFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/service/client/CardsFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/service/client/LoansFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/service/client/LoansFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/bankapp/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/AccountsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/AccountsApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/mapper/CustomerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/mapper/CustomerMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/bankapp/cards/CardsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/bankapp/cards/CardsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/service/ICustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/service/ICustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/service/client/CardsFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/service/client/CardsFeignClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/service/client/LoansFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/service/client/LoansFeignClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/service/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/com/bankapp/accounts/service/impl/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/bankapp/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/bankapp/cards/controller/CardsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/.gitignore" afterDir="false" />
@@ -48,14 +44,11 @@
       <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/cards.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/src/test/java/com/configserver/ConfigserverApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/test/java/com/configserver/ConfigserverApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/build/compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/build/compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/bankapp/loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/bankapp/loans/LoansApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/bankapp/loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/bankapp/loans/controller/LoansController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/bankapp/loans/LoansApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/loans/target/classes/com/bankapp/loans/LoansApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/bankapp/loans/controller/LoansController.class" beforeDir="false" afterPath="$PROJECT_DIR$/loans/target/classes/com/bankapp/loans/controller/LoansController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +82,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -112,13 +105,14 @@
     &quot;Application.CardsApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.ConfigserverApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GatewayserverApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.LoansApplication.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/PROJECT/Banking_Microservice&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -129,7 +123,7 @@
       <recent name="com.bankapp.accounts.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EurekaserverApplication">
+  <component name="RunManager" selected="Application.GatewayserverApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bankapp.accounts.AccountsApplication" />
       <module name="accounts" />
@@ -156,12 +150,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.configserver.ConfigserverApplication" />
-      <module name="configserver" />
+    <configuration name="EurekaserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bankapp.eurekaserver.EurekaserverApplication" />
+      <module name="eurekaserver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.configserver.*" />
+          <option name="PATTERN" value="com.bankapp.eurekaserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,12 +163,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bankapp.eurekaserver.EurekaserverApplication" />
-      <module name="eurekaserver" />
+    <configuration name="GatewayserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.banka_pp.gatewayserver.GatewayserverApplication" />
+      <module name="gatewayserver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bankapp.eurekaserver.*" />
+          <option name="PATTERN" value="com.banka_pp.gatewayserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EurekaserverApplication" />
-        <item itemvalue="Application.ConfigserverApplication" />
-        <item itemvalue="Application.LoansApplication" />
+        <item itemvalue="Application.GatewayserverApplication" />
         <item itemvalue="Application.CardsApplication" />
         <item itemvalue="Application.AccountsApplication" />
+        <item itemvalue="Application.LoansApplication" />
+        <item itemvalue="Application.EurekaserverApplication" />
       </list>
     </recent_temporary>
   </component>

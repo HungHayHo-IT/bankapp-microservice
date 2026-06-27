@@ -51,3 +51,9 @@ info:
     name: "cards"
     description: "bank app cards applications"
     version: "1.0.0"
+
+logging:
+  level:
+    com:
+      bankapp:
+        cards: DEBUG

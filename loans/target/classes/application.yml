@@ -51,3 +51,9 @@ info:
     name: "loans"
     description: "bank app loans applications"
     version: "1.0.0"
+
+logging:
+  level:
+    com:
+      bankapp:
+        loans: DEBUG
