@@ -14,8 +14,8 @@ WORKDIR /app
 
 RUN apk add --no-cache curl
 
-COPY --from=builder /build/target/gatewayserver-0.0.1-SNAPSHOT.jar gatewayserver-0.0.1-SNAPSHOT.jar
+COPY --from=builder /build/target/eurekaserver-0.0.1-SNAPSHOT.jar eurekaserver-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8070
 
-ENTRYPOINT ["java", "-jar", "gatewayserver-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "eurekaserver-0.0.1-SNAPSHOT.jar"]

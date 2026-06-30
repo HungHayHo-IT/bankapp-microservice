@@ -1,4 +1,4 @@
-package com.eazybytes.gatewayserver.filters;
+package com.banka_pp.gatewayserver.filter;
 
 import com.banka_pp.gatewayserver.filter.FilterUtility;
 import org.slf4j.Logger;

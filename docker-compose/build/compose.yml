@@ -31,3 +31,9 @@ services:
       context: ../../loans
       dockerfile: Dockerfile
     image: hunghayho/loans:v1
+
+  gatewayserver:
+    build:
+      context: ../../gatewayserver
+      dockerfile: Dockerfile
+    image: hunghayho/gatewayserver:v1

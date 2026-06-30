@@ -2,6 +2,7 @@ package com.bankapp.accounts.service.impl;
 
 import com.bankapp.accounts.constants.AccountsConstants;
 import com.bankapp.accounts.dto.AccountsDto;
+import com.bankapp.accounts.dto.AccountsMsgDto;
 import com.bankapp.accounts.dto.CustomerDto;
 import com.bankapp.accounts.entity.Accounts;
 import com.bankapp.accounts.entity.Customer;
@@ -13,6 +14,9 @@ import com.bankapp.accounts.repository.AccountsRepository;
 import com.bankapp.accounts.repository.CustomerRepository;
 import com.bankapp.accounts.service.IAccountsService;
 import lombok.AllArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -21,6 +25,8 @@ import java.util.Random;
 @Service
 @AllArgsConstructor
 public class AccountsServiceImpl  implements IAccountsService {
+
+    private static final Logger log = LoggerFactory.getLogger(AccountsServiceImpl.class);
 
     private AccountsRepository accountsRepository;
     private CustomerRepository customerRepository;
@@ -38,6 +44,7 @@ public class AccountsServiceImpl  implements IAccountsService {
         }
         Customer savedCustomer = customerRepository.save(customer);
         accountsRepository.save(createNewAccount(savedCustomer));
+
     }
 
     /**

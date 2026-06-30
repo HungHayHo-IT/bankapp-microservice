@@ -6,6 +6,10 @@ import com.bankapp.accounts.dto.CustomerDto;
 import com.bankapp.accounts.dto.ErrorResponseDto;
 import com.bankapp.accounts.dto.ResponseDto;
 import com.bankapp.accounts.service.IAccountsService;
+import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
+import io.github.resilience4j.timelimiter.TimeLimiterConfig;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -15,12 +19,20 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.circuitbreaker.resilience4j.ReactiveResilience4JCircuitBreakerFactory;
+import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JConfigBuilder;
+import org.springframework.cloud.client.circuitbreaker.Customizer;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.time.Duration;
 
 /**
  * @author Eazy Bytes
@@ -35,6 +47,8 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 @Validated
 public class AccountsController {
+
+    private final static Logger logger = LoggerFactory.getLogger(AccountsController.class);
 
     private IAccountsService iAccountsService;
 
@@ -172,11 +186,26 @@ public class AccountsController {
             summary = "Get contact info",
             description = "Contact info details that can be reached out in case of any issues"
     )
+
+    @RateLimiter(name = "getContactInfo",fallbackMethod = "getContactInfoFallback")
+    @Retry(name="getContactInfo" , fallbackMethod = "getContactInfoFallback")
     @GetMapping("/contact-info")
     public ResponseEntity<AccountsContactInfoDto> getContactInfo(){
+        logger.debug("getContactInfo() method invoked");
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(accountsContactInfoDto);
+
     }
+
+
+    public ResponseEntity<String> getContactInfoFallback(Throwable t){
+        logger.debug("getContactInfoFallback() method invoked");
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body("Please try again after some minute");
+    }
+
+
 
 }
